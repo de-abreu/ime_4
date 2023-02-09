@@ -3,7 +3,7 @@ def bsearch(array, key):
     end = len(array)
 
     while start < end:
-        i = (end + start) // 2
+        i = start + (end - start) // 2
         if array[i] == key:
             return i
         if array[i] < key:
